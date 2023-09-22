@@ -51,12 +51,12 @@ class ProductController extends BaseController
          $this->product->save($data);
         }
 
-        $sectionData = 
+        $savecategory = 
         [
             'ProductCategory' => $this->request->getVar('ProductCategory'),
         ];
 
-        $this->categories->save($sectionData);
+        $this->categories->save($savecategory);
 
         return redirect()->to('/product');
 

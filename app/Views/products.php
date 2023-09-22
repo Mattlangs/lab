@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Management</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
-  
     body, h1, h2, h3, p, ul, li {
       margin: 0;
       padding: 0;
@@ -32,7 +32,6 @@
     }
 
     form label {
-      display: block;
       font-weight: bold;
       margin-bottom: 5px;
     }
@@ -91,59 +90,57 @@
   <div class="container">
     <h1>Product Management</h1>
     <form action="/save" method="post">
-      <label for="ProductName">Product Name:</label>
-      <input type="hidden" name="id" value="<?= isset($pro['id']) ? $pro['id'] : '' ?>">
-      <input type="text" name="ProductName" id="ProductName" placeholder="Product Name" value="<?= isset($pro['ProductName']) ? $pro['ProductName'] : '' ?>">
+      <div class="form-group">
+        <label for="ProductName">Product Name:</label>
+        <input type="hidden" name="id" value="<?= isset($pro['id']) ? $pro['id'] : '' ?>">
+        <input type="text" class="form-control" name="ProductName" id="ProductName" placeholder="Product Name" value="<?= isset($pro['ProductName']) ? $pro['ProductName'] : '' ?>">
+      </div>
       
-      <label for="ProductDescription">Product Description:</label>
-      <input type="text" name="ProductDescription" id="ProductDescription" placeholder="Product Description" value="<?= isset($pro['ProductDescription']) ? $pro['ProductDescription'] : '' ?>">
+      <div class="form-group">
+        <label for="ProductDescription">Product Description:</label>
+        <input type="text" class="form-control" name="ProductDescription" id="ProductDescription" placeholder="Product Description" value="<?= isset($pro['ProductDescription']) ? $pro['ProductDescription'] : '' ?>">
+      </div>
       
-      <label for="ProductCategory">Category:</label>
-      <select name="ProductCategory" id="ProductCategory">
-        <option value="Clothes" <?= (isset($pro['ProductCategory']) && $pro['ProductCategory'] === 'Clothes') ? 'selected' : '' ?>>Clothes</option>
-        <option value="Utensils" <?= (isset($pro['ProductCategory']) && $pro['ProductCategory'] === 'Utensils') ? 'selected' : '' ?>>Utensils</option>
-        <option value="Drink" <?= (isset($pro['ProductCategory']) && $pro['ProductCategory'] === 'Drink') ? 'selected' : '' ?>>Drink</option>
-        <option value="Jewelry" <?= (isset($pro['ProductCategory']) && $pro['ProductCategory'] === 'Jewelry') ? 'selected' : '' ?>>Jewelry</option>
-        <option value="Other" <?= (isset($pro['ProductCategory']) && $pro['ProductCategory'] === 'Other') ? 'selected' : '' ?>>Other</option>
-      </select>
+      <div class="form-group">
+        <label for="ProductCategory">Product Category:</label>
+        <select class="form-control" name="ProductCategory" id="ProductCategory">
+          <option value="Clothes" <?= (isset($pro['ProductCategory']) && $pro['ProductCategory'] === 'Clothes') ? 'selected' : '' ?>>Clothes</option>
+          <option value="Utensils" <?= (isset($pro['ProductCategory']) && $pro['ProductCategory'] === 'Utensils') ? 'selected' : '' ?>>Utensils</option>
+          <option value="Drink" <?= (isset($pro['ProductCategory']) && $pro['ProductCategory'] === 'Drink') ? 'selected' : '' ?>>Drink</option>
+          <option value="Food" <?= (isset($pro['ProductCategory']) && $pro['ProductCategory'] === 'Food') ? 'selected' : '' ?>>Food</option>
+          <option value="Other" <?= (isset($pro['ProductCategory']) && $pro['ProductCategory'] === 'Other') ? 'selected' : '' ?>>Other</option>
+        </select>
+      </div>
       
-      <label for="ProductQuantity">Product Quantity:</label>
-      <input type="text" name="ProductQuantity" id="ProductQuantity" placeholder="Product Quantity" value="<?= isset($pro['ProductQuantity']) ? $pro['ProductQuantity'] : '' ?>">
+      <div class="form-group">
+        <label for="ProductQuantity">Product Quantity:</label>
+        <input type="number" class="form-control" name="ProductQuantity" id="ProductQuantity" placeholder="Product Quantity" value="<?= isset($pro['ProductQuantity']) ? $pro['ProductQuantity'] : '' ?>">
+      </div>
       
-      <label for="ProductPrice">Product Price:</label>
-      <input type="text" name="ProductPrice" id="ProductPrice" placeholder="Product Price" value="<?= isset($pro['ProductPrice']) ? $pro['ProductPrice'] : '' ?>">
+      <div class="form-group">
+        <label for="ProductPrice">Product Price:</label>
+        <input type="number" class="form-control" name="ProductPrice" id="ProductPrice" placeholder="Product Price" value="<?= isset($pro['ProductPrice']) ? $pro['ProductPrice'] : '' ?>">
+      </div>
       
-      <input type="submit" value="Save">
+      <input type="submit" class="btn btn-primary" value="Save">
     </form>
     
     <h2>Product List</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Product Name</th>
-          <th>Product Description</th>
-          <th>Product Category</th>
-          <th>Product Quantity</th>
-          <th>Product Price</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <?php foreach ($product as $pr): ?>
-          <tr>
-            <td><?= isset($pr['ProductName']) ? $pr['ProductName'] : '' ?></td>
-            <td><?= isset($pr['ProductDescription']) ? $pr['ProductDescription'] : '' ?></td>
-            <td><?= isset($pr['ProductCategory']) ? $pr['ProductCategory'] : '' ?></td>
-            <td><?= isset($pr['ProductQuantity']) ? $pr['ProductQuantity'] : '' ?></td>
-            <td><?= isset($pr['ProductPrice']) ? $pr['ProductPrice'] : '' ?></td>
-            <td class="action-links">
-              <a href="/delete/<?= $pr['id'] ?>">Delete</a>
-              <a href="/edit/<?= $pr['id'] ?>">Edit</a>
-            </td>
-          </tr>
-        <?php endforeach ?>
-      </tbody>
-    </table>
+    <ul>
+      <?php foreach ($product as $pr): ?>
+        <li>
+          <strong>Product Name:</strong> <?= isset($pr['ProductName']) ? $pr['ProductName'] : '' ?><br>
+          <strong>Product Description:</strong> <?= isset($pr['ProductDescription']) ? $pr['ProductDescription'] : '' ?><br>
+          <strong>Product Category:</strong> <?= isset($pr['ProductCategory']) ? $pr['ProductCategory'] : '' ?><br>
+          <strong>Product Quantity:</strong> <?= isset($pr['ProductQuantity']) ? $pr['ProductQuantity'] : '' ?><br>
+          <strong>Product Price:</strong> <?= isset($pr['ProductPrice']) ? $pr['ProductPrice'] : '' ?><br>
+          <span class="action-links">
+            <a href="/delete/<?= $pr['id'] ?>">Delete</a>
+            <a href="/edit/<?= $pr['id'] ?>">Edit</a>
+          </span>
+        </li>
+      <?php endforeach ?>
+    </ul>
   </div>
 </body>
 </html>
