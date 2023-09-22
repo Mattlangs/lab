@@ -1,0 +1,817 @@
+CRITICAL - 2023-09-17 06:40:38 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:40:38 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:40:39 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:40:39 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:40:40 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:40:40 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:41:27 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:41:27 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:41:27 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:41:27 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:41:29 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:41:29 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:41:30 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:41:30 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:41:30 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:41:30 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:41:37 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:41:37 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:41:39 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:41:39 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:43:26 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:43:26 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:43:27 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:43:27 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:43:28 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:43:28 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:44:18 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:44:18 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:44:18 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:44:18 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:44:20 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:44:20 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:44:21 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:44:21 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:44:21 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:44:21 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-17 06:44:22 --> Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+ 2 SYSTEMPATH\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+ 3 SYSTEMPATH\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 6 SYSTEMPATH\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+ 8 SYSTEMPATH\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+10 SYSTEMPATH\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\mycrud\\public\\index.php')
+CRITICAL - 2023-09-17 06:44:22 --> Uncaught TypeError: Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned in E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php:208
+Stack trace:
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(519): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#6 E:\lara
+【Previous Exception】
+TypeError
+Return value of CodeIgniter\HTTP\IncomingRequest::getPostMaxSize() must be of the type int, float returned
+#0 E:\laragon\www\mycrud\system\HTTP\IncomingRequest.php(164): CodeIgniter\HTTP\IncomingRequest->getPostMaxSize()
+#1 E:\laragon\www\mycrud\system\Config\Services.php(567): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\SiteURI), 'php://input', Object(CodeIgniter\HTTP\UserAgent))
+#2 E:\laragon\www\mycrud\system\Config\Services.php(523): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#4 E:\laragon\www\mycrud\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#5 E:\laragon\www\mycrud\system\Config\Services.php(558): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#6 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#7 E:\laragon\www\mycrud\system\Config\Services.php(538): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#8 E:\laragon\www\mycrud\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#9 E:\laragon\www\mycrud\system\CodeIgniter.php(639): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#10 E:\laragon\www\mycrud\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->getRequestObject()
+#11 E:\laragon\www\mycrud\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\mycrud\system\Commands\Server\rewrite.php(47): require_once('E:\\laragon\\www\\...')
+#13 {main}
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
